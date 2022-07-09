@@ -1,0 +1,49 @@
+<div class="sectionOfBooks">
+  <mat-button-toggle-group
+    class="hh"
+    name="bookSection"
+    aria-label="Book Section"
+  >
+    <mat-button-toggle
+    class="section"
+    id="red"
+    value="red"
+    routerLink="/featured"
+      >Featured Products</mat-button-toggle
+    >
+    <mat-button-toggle
+    class="section"
+      value="green"
+      routerLink="/newarrival"
+      >New Arrivals</mat-button-toggle
+    >
+    <mat-button-toggle
+      class="section"
+      value="blue"
+      routerLink="/mostviewed"
+      >Most Viewed</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>
+
+<div class="books">
+  <ng-container *ngFor="let book of books">
+    <div class="book">
+      <div class="book-thumb-container">
+        <img
+          class="book-thumbnail"
+          src="{{ book.imageLink }}"
+          alt="thumbnail"
+        />
+      </div>
+      <div class="book-description">
+        <p class="book-name">{{ book.title }}</p>
+        <p class="book-author">by {{ book.author }}</p>
+        <a class="btn btn-danger btn-sm" href="#" role="button">
+          ₹ {{ book.price }}</a
+        >
+      </div>
+    </div>
+  </ng-container>
+</div>
+

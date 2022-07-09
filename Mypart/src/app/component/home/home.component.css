@@ -1,0 +1,138 @@
+.filters {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+::ng-deep.mat-form-field-infix {
+  background-color: #3f51b5;
+}
+
+::ng-deep.mat-select-value,
+.mat-select-arrow,
+.mat-form-field-hide-placeholder .mat-select-placeholder,
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: #fff !important;
+  opacity: 1;
+}
+::ng-deep.mat-form-field-infix {
+  border-color: #fff !important;
+  border-top: none;
+  padding-left: 5px !important;
+}
+
+::ng-deep.mat-form-field-appearance-legacy .mat-form-field-label {
+  padding-left: 5px;
+}
+::ng-deep.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #fff !important;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.book {
+  width: 280px;
+  margin: 10px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #202020;
+  box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 22%);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.book:hover {
+  box-shadow: 4px 3px 11px 6px rgb(200 152 44 / 46%);
+  transform: translateY(-3px);
+}
+.book-thumb-container {
+  background-color: #fff;
+  position: relative;
+  height: 220px;
+  /* width: auto; */
+  color: #fff;
+  text-align: center;
+}
+.book-thumb-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 220px;
+  width: 280px;
+}
+.book-description {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+.book-name {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  /* margin-bottom: 20px; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.book-author {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.book-genre {
+  color: white;
+  width: 20px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-description a {
+  display: inline-block;
+  width: fit-content;
+}
+
+.hh {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: fit-content;
+  border-radius: 5px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.section {
+  border: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  /* transition: all 0.3s ease;  */
+}
+/* .section:active{
+   border: 3px solid #ff7a59;
+  color: #ff7a59;
+  background: #fff; 
+ }  */
+.section:hover {
+  color: #ff7a59;
+}
